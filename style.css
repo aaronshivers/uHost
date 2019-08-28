@@ -1,10 +1,12 @@
 :root {
   --white: #fff;
   --grey: #858585;
+  --dark-grey: #424242;
   --light-green: #d5ffdc;
   --green: #2ddf5c;
   --medium-dark-green: #19b84c;
   --dark-green: #0e4f1f;
+  --light-red: #ffcede;
   --red: #ff1b68;
   --trans-black: rgba(0, 0, 0, 0.5);
 
@@ -109,6 +111,46 @@ body {
 
 .button:focus {
   outline: none;
+}
+
+#key-features {
+  background-color: var(--red);
+  margin-top: 80px;
+  padding: 60px;
+}
+
+#key-features .section-title {
+  color: var(--white);
+  margin: 32px;
+}
+
+.key-feature__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.key-feature {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  vertical-align: top;
+}
+
+.key-feature__image {
+  background: var(--light-red);
+  width: 128px;
+  height: 128px;
+  border: 2px solid var(--dark-grey);
+  border-radius: 50%;
+  margin: auto;
+}
+
+.key-feature__description {
+  text-align: center;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .main-header {
