@@ -1,5 +1,7 @@
 :root {
+  --black: #000;
   --white: #fff;
+  --light-grey: #333;
   --grey: #858585;
   --dark-grey: #424242;
   --light-green: #d5ffdc;
@@ -214,6 +216,34 @@ body {
   color: var(--red);
   background-color: var(--white);
   border: none;
+}
+
+.main-footer {
+  background-color: var(--black);
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 var(--xl-size);
+}
+
+.main-footer__link a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: var(--light-grey);
 }
 
 
