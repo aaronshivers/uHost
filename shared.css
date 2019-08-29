@@ -1,6 +1,7 @@
 :root {
   --black: #000;
   --white: #fff;
+  --lighter-grey: #bbb;
   --light-grey: #333;
   --grey: #858585;
   --dark-grey: #424242;
@@ -9,13 +10,18 @@
   --medium-dark-green: #19b84c;
   --dark-green: #0e4f1f;
   --light-red: #ffcede;
+  --orange: #ff5454;
   --red: #ff1b68;
   --trans-black: rgba(0, 0, 0, 0.5);
+  --trans-green: rgba(213, 255, 220, 0.95);
+  --trans-dark-green: rgba(234, 252, 237, 0.95);
+  --trans-darker-green: rgba(14, 79, 31, 0.95);
 
   --s-size: 3px;
   --m-size: 5px;
   --l-size: 8px;
   --xl-size: 16px;
+  --xxl-size: 32px;
 }
 
 * {

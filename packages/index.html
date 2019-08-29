@@ -4,30 +4,52 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/shared.css">
-  <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="stylesheet" type="text/css" href="/packages/style.css">
+  <link rel="stylesheet" type="text/css" href="/packages/packages.css">
   <title>uHost</title>
 </head>
 <body>
 
+  <!-- START: HEADER -->
+  <header class="main-header">
+    <div>
+      <a class="main-header__brand" href="/index.html">uHost</a>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__items">
+        <li class="main-nav__item"><a href="index.html">Packages</a></li>
+        <li class="main-nav__item"><a href="/customers/index.html">Customers</a></li>
+        <li class="main-nav__item main-nav__item--cta"><a href="/start-hosting/index.html">Start Hosting</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <!-- START: MAIN -->
   <main>
 
-    <!-- START: HEADER -->
-    <header class="main-header">
-      <div>
-        <a class="main-header__brand" href="/index.html">uHost</a>
-      </div>
-      <nav class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="index.html">Packages</a></li>
-          <li class="main-nav__item"><a href="/customers/index.html">Customers</a></li>
-          <li class="main-nav__item main-nav__item--cta"><a href="/start-hosting/index.html">Start Hosting</a></li>
-        </ul>
-      </nav>
-    </header>
-
-
+    <!-- START: PLANS -->
+    <section class="package" id="plus">
+      <a href="#">
+        <h1 class="package__title">Our PLUS Plan</h1>
+        <h2 class="package__subtitle">The most popular choice of our customers.</h2>
+        <p class="package__body">Benefit from increased storage and faster support to ensure that your mission-critical data and applications
+            are always available!</p>
+      </a>
+    </section>
+    <section class="package" id="free">
+      <a href="#">
+        <h1 class="package__title">Our FREE Plan</h1>
+        <h2 class="package__subtitle">An extremely solid start into our hosting world.</h2>
+        <p class="package__body">Get started immediately at zero cost!</p>
+      </a>
+    </section>
+    <div class="clearfix"></div>
+    <section class="package" id="premium">
+      <a href="#">
+        <h1 class="package__title">Our PREMIUM Plan</h1>
+        <h2 class="package__subtitle">All your enterprise needs. Instant support, guaranteed uptime. </h2>
+        <p class="package__body">The best solution for small to large enterprises. Because hosting shouldn't be in the way!</p>
+      </a>
+    </section>
   </main>
 
   <!-- START: FOOTER -->
