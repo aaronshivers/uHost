@@ -57,8 +57,11 @@ body {
 .main-header {
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   background-color: var(--green);
-  padding: var(--m-size);
+  padding: var(--m-size) var(--l-size);
+  z-index: 1;
 }
 
 .main-header > div {
