@@ -12,7 +12,7 @@
   background-origin: border-box;
   background-clip: border-box;
 
-  width: 100vw;
+  /*width: 100vw;*/
   height: 33vh;
   margin-top: 4rem;
   position: relative;
@@ -59,7 +59,7 @@
   text-align: center;
   padding: var(--m-size);
   margin: 0.5rem 0;
-  width: 100vw;
+  /*width: 100vw;*/
 }
 
 .plan--highlighted {
@@ -158,11 +158,13 @@
   text-align: center;
 }
 
-.key-feature {
-  display: inline-block;
-  width: 30%;
-  text-align: center;
-  vertical-align: top;
+@media (min-width: 768px) {
+  .key-feature {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    max-width: 25rem;
+  }
 }
 
 .key-feature__image {

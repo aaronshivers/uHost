@@ -162,7 +162,7 @@ body {
   background-color: var(--black);
   padding: var(--xl-size);
   margin-top: var(--xxl-size);
-  width: 100vw;
+  width: 100%;
 }
 
 .main-footer__links {
