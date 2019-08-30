@@ -24,6 +24,12 @@
   --l-size: 1.2rem;
   --xl-size: 2rem;
   --xxl-size: 2.5;
+
+  /* Responsive Breakpoints */
+  --breakpoint-small: 576px;
+  --breakpoint-medium: 768px;
+  --breakpoint-large: 992px;
+  --breakpoint-extra-large: 1200px;
 }
 
 * {
@@ -100,8 +106,14 @@ body {
 .main-nav {
   display: inline-block;
   text-align: right;
-  width: calc(100% - 122px);
+  width: calc(100% - 99px);
   vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    width: calc(100% - 99px);
+  }
 }
 
 .main-nav__items {
@@ -150,6 +162,7 @@ body {
   background-color: var(--black);
   padding: var(--xl-size);
   margin-top: var(--xxl-size);
+  width: 100vw;
 }
 
 .main-footer__links {

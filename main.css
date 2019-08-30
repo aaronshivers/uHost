@@ -1,25 +1,21 @@
 #product-overview {
-  background: linear-gradient(to top, var(--trans-brown), transparent) 10%,
-    url('./images/freedom.webp') center top 15%/cover no-repeat border-box,
-    var(--red);
+  /*background: linear-gradient(to top, var(--trans-brown), transparent) 10%,*/
+    /*url('./images/freedom.webp') center center/cover no-repeat border-box,*/
+    /*var(--red);*/
 
-/*  background-image: url('./images/freedom.jpg');
+  background-color: var(--red);
+  background: linear-gradient(to top, var(--trans-brown), transparent) 10%,
+    url('./images/freedom.webp');
   background-size: cover;
-  background-position: center top 25%;
+  background-position: center;
   background-repeat: no-repeat;
   background-origin: border-box;
-  background-clip: border-box;*/
-  /*background-image: linear-gradient(red, blue, rgba(0, 0, 0, 0.5));*/
-  /*background-image: radial-gradient(circle 20px, red 20%, blue 30%, green);*/
+  background-clip: border-box;
+
   width: 100vw;
   height: 33vh;
-  margin-top: var(--xxl-size);
+  margin-top: 4rem;
   position: relative;
-}
-
-.section-title {
-  color: var(--green);
-  text-align: center;
 }
 
 #product-overview h1 {
@@ -28,35 +24,60 @@
   position: absolute;
   bottom: 5%;
   left: 3%;
+  font-size: 2rem;
 }
 
-.plan__list {
-  width: 80%;
-  margin: auto;
+@media (min-width: 576px) {
+  #product-overview {
+    height: 40vh;
+    background-position: 50% 25%;
+  }
+
+  #product-overview h1 {
+    font-size: 3rem;
+  }
+}
+
+/*@media (min-width: 992px) {
+  #product-overview {
+    height: 40vh;
+    background-position: 50% 25%;
+  }
+
+  #product-overview h1 {
+    font-size: 4rem;
+  }
+}*/
+
+.section-title {
+  color: var(--green);
   text-align: center;
 }
+
+/*.plan__list {
+  width: 100vw;
+  text-align: center;
+}*/
 
 .plan {
   background-color: var(--light-green);
   text-align: center;
   padding: var(--m-size);
-  margin: var(--s-size);
-  display: inline-block;
-  width: 30%;
-  vertical-align: middle;
+  margin: 0.5rem 0;
+  width: 100vw;
 }
 
 .plan--highlighted {
   background-color: var(--medium-dark-green);
   color: var(--white);
-  box-shadow: 2px 2px 2px 2px var(--trans-black);
+  /*box-shadow: 2px 2px 2px 2px var(--trans-black);*/
 }
 
 .plan__annotation {
   background-color: var(--white);
   color: var(--medium-dark-green);
+  padding: var(--s-size);
   box-shadow: 2px 2px 2px 2px var(--trans-black);
-  padding: var(--m-size);
   border-radius: var(--m-size);
 }
 
@@ -91,6 +112,7 @@
   background-color: var(--red);
   margin-top: 80px;
   padding: 60px;
+  width: 100vw;
 }
 
 #key-features .section-title {
