@@ -18,11 +18,12 @@
   --trans-dark-green: rgba(234, 252, 237, 0.95);
   --trans-darker-green: rgba(14, 79, 31, 0.95);
 
-  --s-size: 3px;
-  --m-size: 5px;
-  --l-size: 8px;
-  --xl-size: 16px;
-  --xxl-size: 32px;
+  --xs-size: 0.2rem;
+  --s-size: 0.5rem;
+  --m-size: 1rem;
+  --l-size: 1.2rem;
+  --xl-size: 2rem;
+  --xxl-size: 2.5;
 }
 
 * {
@@ -34,13 +35,24 @@ body {
   margin: 0;
 }
 
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--trans-black);
+}
+
 .button {
   background-color: var(--dark-green);
   color: var(--white);
   font: inherit;
   border: 1.5px solid var(--dark-green);
-  padding: var(--l-size);
-  border-radius: var(--l-size);
+  padding: var(--m-size);
+  border-radius: var(--m-size);
   font-weight: bold;
   cursor: pointer;
 }
@@ -61,7 +73,7 @@ body {
   top: 0;
   left: 0;
   background-color: var(--green);
-  padding: var(--m-size) var(--l-size);
+  padding: var(--s-size) var(--m-size);
   z-index: 1;
 }
 
@@ -74,8 +86,8 @@ body {
   color: var(--dark-green);
   text-decoration: none;
   font-weight: bold;
-  font-size: 22px;
-  height: 22px;
+  font-size: var(--l-size);
+  height: var(--l-size);
   display: inline-block;
 }
 
@@ -92,33 +104,33 @@ body {
 
 .main-nav__items {
   margin: 0;
-  padding: var(--l-size);
+  padding: var(--s-size);
   list-style: none;
 }
 
 .main-nav__item {
   display: inline-block;
-  margin: 0 var(--xl-size);
+  margin: 0 var(--m-size);
 }
 
 .main-nav__item a {
   color: var(--dark-green);
   text-decoration: none;
   font-weight: bold;
-  padding: var(--s-size) 0;
+  padding: var(--xs-size) 0;
 }
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
   color: var(--white);
-  border-bottom: var(--m-size) solid var(--white);
+  border-bottom: 5px solid var(--white);
 }
 
 .main-nav__item--cta a {
   color: var(--white);
   background-color: var(--red);
-  padding: var(--l-size) var(--xl-size);
-  border-radius: var(--l-size);
+  padding: var(--s-size) var(--m-size);
+  border-radius: 8px;
 }
 
 .main-nav__item--cta a:hover,
@@ -130,8 +142,8 @@ body {
 
 .main-footer {
   background-color: var(--black);
-  padding: 32px;
-  margin-top: 48px;
+  padding: var(--xl-size);
+  margin-top: var(--xxl-size);
 }
 
 .main-footer__links {
@@ -143,7 +155,7 @@ body {
 
 .main-footer__link {
   display: inline-block;
-  margin: 0 var(--xl-size);
+  margin: 0 var(--l-size);
 }
 
 .main-footer__link a {

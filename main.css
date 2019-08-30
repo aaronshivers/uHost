@@ -1,6 +1,6 @@
 #product-overview {
   background: linear-gradient(to top, var(--trans-brown), transparent) 10%,
-    url('./images/freedom.jpg') center top 25%/cover no-repeat border-box,
+    url('./images/freedom.jpg') center top 15%/cover no-repeat border-box,
     var(--red);
 
 /*  background-image: url('./images/freedom.jpg');
@@ -11,10 +11,9 @@
   background-clip: border-box;*/
   /*background-image: linear-gradient(red, blue, rgba(0, 0, 0, 0.5));*/
   /*background-image: radial-gradient(circle 20px, red 20%, blue 30%, green);*/
-  width: 100%;
-  height: 528px;
-  padding: 10px;
-  margin-top: 45px;
+  width: 100vw;
+  height: 33vh;
+  margin-top: var(--xxl-size);
   position: relative;
 }
 
@@ -40,8 +39,8 @@
 .plan {
   background-color: var(--light-green);
   text-align: center;
-  padding: var(--xl-size);
-  margin: var(--l-size);
+  padding: var(--m-size);
+  margin: var(--s-size);
   display: inline-block;
   width: 30%;
   vertical-align: middle;
@@ -57,8 +56,8 @@
   background-color: var(--white);
   color: var(--medium-dark-green);
   box-shadow: 2px 2px 2px 2px var(--trans-black);
-  padding: var(--l-size);
-  border-radius: var(--l-size);
+  padding: var(--m-size);
+  border-radius: var(--m-size);
 }
 
 .plan__title {
