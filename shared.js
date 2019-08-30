@@ -5,8 +5,6 @@ const closeModalButton = document.querySelector('.modal__action--negative')
 const toggleNavButton = document.querySelector('.toggle-button')
 const mobileNav = document.querySelector('.mobile-nav')
 
-console.dir(backdrop.style['background-image'])
-
 for (let i = 0; i < selectPlanButtons.length; i++) {
   selectPlanButtons[i].addEventListener('click', () => {
     modal.classList.add('open')
