@@ -1,10 +1,7 @@
 const backdrop = document.querySelector('.backdrop')
 const modal = document.querySelector('.modal')
 const selectPlanButtons = document.querySelectorAll('.plan button')
-
-// console.dir(backdrop)
-console.dir(selectPlanButtons)
-
+const closeModalButton = document.querySelector('.modal__action--negative')
 
 for (let i = 0; i < selectPlanButtons.length; i++) {
   selectPlanButtons[i].addEventListener('click', () => {
@@ -12,3 +9,8 @@ for (let i = 0; i < selectPlanButtons.length; i++) {
     backdrop.style.display = 'block'
   })
 }
+
+closeModalButton.addEventListener('click', () => {
+  modal.style.display = 'none'
+  backdrop.style.display = 'none'
+})
