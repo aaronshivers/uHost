@@ -230,6 +230,13 @@ main {
   outline: none;
 }
 
+.button[disabled] {
+  cursor: not-allowed;
+  border-color: var(--grey);
+  background-color: var(--light-grey);
+  color: var(--grey);
+}
+
 .open {
   display: block !important;
 }
