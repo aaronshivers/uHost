@@ -14,7 +14,7 @@
 
   /*width: 100vw;*/
   height: 33vh;
-  margin-top: 4rem;
+  margin-top: 3.5rem;
   position: relative;
 }
 
@@ -24,10 +24,10 @@
   position: absolute;
   bottom: 5%;
   left: 3%;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
-@media (min-width: 768px) and (min-height: 1024px) {
+@media (min-width: 768px) and (min-height: 768px) {
   #product-overview {
     height: 40vh;
     background-position: 50% 25%;
