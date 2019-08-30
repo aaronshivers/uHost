@@ -88,5 +88,20 @@ main {
   color: var(--lighter-grey);
 }
 
+@media (min-width: 768px) {
+  main {
+    margin: 3rem auto;
+    max-width: 1500px;
+  }
+}
 
+@media (min-width: 1513px) {
+  .package {
+    border-left: 4px solid var(--dark-green);
+  }
+
+  #free {
+    border-right: 4px solid var(--dark-green);
+  }
+}
 
