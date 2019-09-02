@@ -81,6 +81,12 @@ main {
   justify-content: space-between;
 }
 
+.main-header__brand-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .toggle-button {
   width: 3rem;
   background: transparent;
@@ -257,6 +263,10 @@ main {
 
 
 @media (min-width: 768px) {
+  .main-header__brand-button {
+    width: 0;
+  }
+
   .toggle-button {
     display: none;
   }
